@@ -11,88 +11,101 @@
         android:id="@+id/question1Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="59dp"
-        android:text="Question 1: What is the capital of France?"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/option1aText"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="17dp"
+        android:text="Question 1:"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/option1aText"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="126dp"
-        android:text="Option 1: Paris"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="32dp"
+        android:text="What is the capital of France?"
+        android:textSize="31sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question1Text" />
-
-    <Button
-        android:id="@+id/option2aText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="69dp"
-        android:text="Option 2: Berlin"
-        app:layout_constraintBottom_toTopOf="@+id/option3aText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option1aText" />
-
-    <Button
-        android:id="@+id/option3aText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="69dp"
-        android:layout_marginEnd="123dp"
-        android:text="Option 3: Rome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option2aText" />
-
-    <Button
-        android:id="@+id/option4aText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="120dp"
-        android:text="Option 4: France"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option3aText" />
 
     <Button
         android:id="@+id/homeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="160dp"
         android:text="Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/nextButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="160dp"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/homeButton" />
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="417dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/option1aButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Option 1: Paris"
+            android:textAlignment="textStart"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/option2aButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Option 2: Berlin"
+            android:textAlignment="textStart"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/option3aButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Option 3: Brampton"
+            android:textAlignment="textStart"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/option4aButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Option 4: France"
+            android:textAlignment="textStart"
+            android:textSize="34sp" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
