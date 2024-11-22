@@ -43,13 +43,13 @@ public class QuestionActivity3 extends AppCompatActivity {
             }
         });
         radioGroup3 = findViewById(R.id.radioGroup3);
+        nextButton3 = findViewById(R.id.nextButton3);
         nextButton3.setEnabled(false);
         radioGroup3.setOnCheckedChangeListener((radioGroup3, checkId) -> {
             if (checkId != -1) {
                 nextButton3.setEnabled(true);
             }
         });
-        nextButton3 = findViewById(R.id.nextButton3);
         nextButton3.setOnClickListener(view -> {
             int selectedOption = radioGroup3.getCheckedRadioButtonId();
             if (selectedOption != -1) {

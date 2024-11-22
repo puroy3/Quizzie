@@ -48,6 +48,7 @@ public class QuestionActivity1 extends AppCompatActivity {
             }
         });
         radioGroup1 = findViewById(R.id.radioGroup1);
+        nextButton = findViewById(R.id.nextButton);
         // Disable next button until a radio button is pressed.
         nextButton.setEnabled(false);
         radioGroup1.setOnCheckedChangeListener((radioGroup1, checkId) -> {
@@ -56,7 +57,6 @@ public class QuestionActivity1 extends AppCompatActivity {
                     }
                 }
         );
-        nextButton = findViewById(R.id.nextButton);
         nextButton.setOnClickListener(view -> {
             int selectedOption = radioGroup1.getCheckedRadioButtonId();
             if (selectedOption != -1) {

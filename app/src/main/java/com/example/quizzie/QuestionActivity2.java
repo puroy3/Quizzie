@@ -44,6 +44,7 @@ public class QuestionActivity2 extends AppCompatActivity {
             }
         });
         radioGroup2 = findViewById(R.id.radioGroup2);
+        nextButton2 = findViewById(R.id.nextButton2);
         nextButton2.setEnabled(false);
         radioGroup2.setOnCheckedChangeListener((radioGroup2, checkId) -> {
                     if (checkId != -1) {
@@ -51,7 +52,6 @@ public class QuestionActivity2 extends AppCompatActivity {
                     }
                 }
         );
-        nextButton2 = findViewById(R.id.nextButton2);
         nextButton2.setOnClickListener(view -> {
             int selectedOption = radioGroup2.getCheckedRadioButtonId();
             if (selectedOption != -1) {
