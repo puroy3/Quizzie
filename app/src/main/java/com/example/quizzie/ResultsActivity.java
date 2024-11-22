@@ -32,7 +32,7 @@ public class ResultsActivity extends AppCompatActivity {
     }
     private void displayResultsTable() {
         // Get the database which is readable.
-        SQLiteDatabase database = DatabaseHelper.getReadableDatabase();
+        SQLiteDatabase database = databaseHelper.getReadableDatabase();
         // Define the columns to get.
         String[] projection = {
                 DatabaseHelper.COLUMN_QUESTION_NUMBER,
