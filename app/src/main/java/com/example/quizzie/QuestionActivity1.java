@@ -32,7 +32,7 @@ public class QuestionActivity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_question1);
-        dbHelper = new DatabaseHelper(this);
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -76,8 +76,8 @@ public class QuestionActivity1 extends AppCompatActivity {
             values.put(DatabaseHelper.COLUMN_QUESTION_NUMBER, "1");
             values.put(DatabaseHelper.COLUMN_USER_ANSWER, selectedAnswerOption);
             values.put(DatabaseHelper.COLUMN_CORRECT_ANSWER, correctAnswer);
-            db.insert(DatabaseHelper.TABLE_NAME, null, values);
-            db.close();
+            database.insert(DatabaseHelper.TABLE_NAME, null, values);
+            database.close();
                 Intent intent;
                 intent = new Intent(view.getContext(), QuestionActivity2.class);
                 view.getContext().startActivity(intent);
