@@ -1,5 +1,6 @@
 package com.example.quizzie;
 
+import java.util.*;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -43,4 +44,5 @@ public class QuestionActivity1 extends AppCompatActivity {
             }
         });
     }
+    public static List<QuizResults> quizResults = new ArrayList<>();
 }
