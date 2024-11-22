@@ -81,28 +81,28 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 1: Delhi"
+            android:text=" Delhi"
             android:textSize="34sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 2: New Delhi"
+            android:text=" New Delhi"
             android:textSize="34sp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 3: Mumbai"
+            android:text=" Mumbai"
             android:textSize="34sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 4: India"
+            android:text=" India"
             android:textSize="34sp" />
     </RadioGroup>
 

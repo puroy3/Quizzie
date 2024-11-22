@@ -17,9 +17,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_USER_ANSWER = "userAnswer";
     public static final String COLUMN_CORRECT_ANSWER = "correctAnswer";
     // Create SQL Query.
-    private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + "(" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_CORRECT_ANSWER + " TEXT,"
-            + COLUMN_USER_ANSWER + " TEXT," + COLUMN_CORRECT_ANSWER + " TEXT," + ");";
+    private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + COLUMN_QUESTION_NUMBER + " INTEGER, "
+            + COLUMN_USER_ANSWER + " TEXT," + COLUMN_CORRECT_ANSWER + " TEXT);";
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }

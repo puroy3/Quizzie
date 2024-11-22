@@ -22,7 +22,7 @@ public class QuestionActivity2 extends AppCompatActivity {
     Button nextButton2;
     RadioGroup radioGroup2;
     DatabaseHelper databaseHelper;
-    String correctAnswer = "Option 2: New Delhi";
+    String correctAnswer = "New Delhi";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

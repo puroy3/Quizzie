@@ -79,7 +79,7 @@
             android:id="@+id/option1aButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 1: Paris"
+            android:text=" Paris"
             android:textAlignment="textStart"
             android:textSize="34sp" />
 
@@ -87,7 +87,7 @@
             android:id="@+id/option2aButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 2: Berlin"
+            android:text=" Berlin"
             android:textAlignment="textStart"
             android:textSize="34sp" />
 
@@ -95,7 +95,7 @@
             android:id="@+id/option3aButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 3: Brampton"
+            android:text=" Brampton"
             android:textAlignment="textStart"
             android:textSize="34sp" />
 
@@ -103,7 +103,7 @@
             android:id="@+id/option4aButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 4: France"
+            android:text=" France"
             android:textAlignment="textStart"
             android:textSize="34sp" />
     </RadioGroup>

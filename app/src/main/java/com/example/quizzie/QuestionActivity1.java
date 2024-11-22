@@ -24,7 +24,7 @@ public class QuestionActivity1 extends AppCompatActivity {
     // Initialize instance of database helper.
     DatabaseHelper databaseHelper;
     // Set correct answer.
-    String correctAnswer = "Option 1: Paris";
+    String correctAnswer = "Paris";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

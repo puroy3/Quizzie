@@ -43,12 +43,6 @@
                         android:textAlignment="textStart"
                         android:textStyle="bold" />
 
-                    <View
-                        android:id="@+id/divider"
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:background="?android:attr/listDivider" />
-
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="86dp"
@@ -57,12 +51,6 @@
                         android:text="User Answer"
                         android:textAlignment="textStart"
                         android:textStyle="bold" />
-
-                    <View
-                        android:id="@+id/divider2"
-                        android:layout_width="72dp"
-                        android:layout_height="match_parent"
-                        android:background="?android:attr/listDivider" />
 
                     <TextView
                         android:id="@+id/textView4"

@@ -83,28 +83,28 @@
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 1: Barrie"
+            android:text=" Barrie"
             android:textSize="34sp" />
 
         <RadioButton
             android:id="@+id/radioButton6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 2: Toronto"
+            android:text=" Toronto"
             android:textSize="34sp" />
 
         <RadioButton
             android:id="@+id/radioButton7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Option 3: Ottawa"
+            android:text=" Ottawa"
             android:textSize="34sp" />
 
         <RadioButton
             android:id="@+id/radioButton8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Option 4: Canada"
+            android:text=" Canada"
             android:textSize="34sp" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
