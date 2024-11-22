@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button startQuizButton;
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +24,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        databaseHelper = new DatabaseHelper(this);
         startQuizButton = findViewById(R.id.startQuizButton);
         startQuizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Clear Database before starting quiz.
+                databaseHelper.clearDatabase();
                 Intent intent;
                 intent = new Intent(view.getContext(), QuestionActivity1.class);
                 view.getContext().startActivity(intent);

@@ -1,8 +1,11 @@
 package com.example.quizzie;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -14,6 +17,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class ResultsActivity extends AppCompatActivity {
+    Button homeButton4;
     DatabaseHelper databaseHelper;
     TableLayout tableLayout;
     @Override
@@ -25,6 +29,15 @@ public class ResultsActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        homeButton4 = findViewById(R.id.homeButton4);
+        homeButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent = new Intent(view.getContext(), MainActivity.class);
+                view.getContext().startActivity(intent);
+            }
         });
         databaseHelper = new DatabaseHelper(this);
         tableLayout = findViewById(R.id.resultsTable);
